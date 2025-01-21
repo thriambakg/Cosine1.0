@@ -464,14 +464,14 @@ def display_portfolio_entries():
         
         with col1:
             entry["stock"] = st.text_input(
-                f"Stock Ticker {i + 1}",
+                f"Stock Ticker",
                 value=entry["stock"],
                 key=f"stock_input_{i}"
             )
 
         with col2:
             entry["shares"] = st.number_input(
-                f"Number of Shares {i + 1}",
+                f"Number of Shares",
                 min_value=0.0,
                 value=float(entry["shares"]),
                 step=0.1,
